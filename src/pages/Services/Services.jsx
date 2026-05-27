@@ -15,7 +15,7 @@ function Services(){
         <div className="service-card">
           <FaCode className="service-icon"/>
           <h3>Frontend Development</h3>
-          <p>I build modern and interactive websites using React, HTML, CSS, JavaScript, Node.Js, Php, MySql and Next.js.</p>
+          <p>I build modern and interactive websites using React, HTML, CSS, JavaScript, Node.Js, and Flutter.</p>
         </div>
 
         <div className="service-card">

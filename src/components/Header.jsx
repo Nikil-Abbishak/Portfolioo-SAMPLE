@@ -36,9 +36,9 @@ function Header() {
             </ul>
 
             <ul className="icons">
-                <li><a href="#"><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li><a href="https://github.com/Nikil-Abbishak" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a></li>
+                <li><a href="https://www.instagram.com/n_ii_kill/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li><a href="https://www.linkedin.com/in/nikil-abbishake-302415325" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
         </header>
     )

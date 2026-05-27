@@ -42,21 +42,24 @@ function Contact() {
 
         {/* RIGHT FORM */}
 
-        <form className="contact-form">
+        <form className="contact-form" action="mailto:nikilabbishake@gmail.com" method="POST" encType="text/plain">
 
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             required
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             required
           />
 
           <textarea
+            name="message"
             placeholder="Your Message"
             rows="6"
             required
