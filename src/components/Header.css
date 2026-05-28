@@ -107,3 +107,64 @@ ul{
     transform:scale(1.15);
     text-shadow:0 0 8px rgba(119,119,119,0.8);
 }
+
+/* MENU TOGGLE FOR MOBILE */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .header {
+        padding: 12px 20px;
+        width: 90%;
+    }
+    
+    .links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .links, .icons {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(16px);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        gap: 20px;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .links.open, .icons.open {
+        display: flex;
+        opacity: 1;
+    }
+
+    /* Keep icons below links when both are open */
+    .icons.open {
+        top: calc(100% + 230px);
+        flex-direction: row;
+        padding: 15px 0;
+    }
+}

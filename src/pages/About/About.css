@@ -109,3 +109,38 @@
     color:#333333;
     text-align:left;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .content {
+        gap: 40px;
+    }
+    
+    .photo-card {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 20px;
+        margin: 40px auto;
+    }
+    
+    .title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    
+    .text-about p {
+        text-align: center;
+        font-size: 16px;
+    }
+}

@@ -34,3 +34,13 @@
     transform:translateY(-4px) scale(1.2);
     color:white;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+}

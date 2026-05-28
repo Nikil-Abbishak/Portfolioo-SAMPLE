@@ -118,3 +118,31 @@
     background:#333;
     color:#fff;
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        padding: 20px;
+        margin: 40px auto;
+    }
+    
+    .title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .project-card img {
+        height: 220px;
+    }
+}
